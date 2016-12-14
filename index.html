@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Puppy Clicker</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body ng-app="PuppyClicker">
+    <div ng-controller="MainController">
+      <h1>{{clickers}}</h1>
+      <h2>{{clicksPerSecond}}</h2>
+      <img ng-click="increment()" id="cat" src="https://placekitten.com/g/400/400" alt="Click Catz">
+      <div ng-repeat="item in list">
+        <h1>{{item.name}} {{item.edad}}</h1>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js"></script>
+    <script src="assets/app.js" charset="utf-8"></script>
+  </body>
+</html>
